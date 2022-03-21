@@ -1,0 +1,425 @@
+:root {
+  --clr-text: #3d3d3d;
+  --clr-primary: #141E27;
+  --clr-accent: #FFFA4D;
+  --clr-accent-light: #FDFF8F;
+  --fs-xlg: 4rem;
+  --fs-lg: 3.125rem;
+  --fs-md: 2rem;
+  --fs-sm: 1.25rem;
+  --fs-xsm: 1.125rem;
+  --ff-title: 'Oswald', sans-serif;
+  --ff-sans: 'Merriweather Sans', sans-serif;
+  --ff-logo: 'Poppins', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--ff-sans);
+  color: var(--clr-text);
+  font-size: var(--fs-sm);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Typography */
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+h2, h3 {
+  font-family: var(--ff-title);
+}
+
+h1, h2 {
+  font-size: var(--fs-xlg);
+}
+
+p {
+  margin-bottom: 0.85rem;
+}
+
+.section-title {
+  font-weight: bold;
+}
+
+.heading-text {
+  color: var(--clr-primary);
+  font-weight: bold;
+}
+
+.container-fluid {
+  padding: 7% 5%;
+}
+
+.intro .container-fluid,
+.perks .container-fluid {
+  padding: 5% 5%;
+}
+
+/* Navigation */
+.navbar {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-primary);
+  color: white;
+}
+
+.brand-title {
+  font-family: var(--ff-logo);
+  font-size: 1.5rem;
+  margin: 0.5rem 0.5rem 0.5rem 1.5rem;
+}
+
+.brand-title a,
+.brand-title a:hover,
+.brand-title a:focus {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li:last-child {
+  margin-right: 1rem;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li:hover {
+  background-color: var(--clr-accent);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Buttons */
+.btn {
+  font-family: var(--ff-sans);
+  border: 0;
+}
+
+.btn-primary {
+  background: var(--clr-primary);
+}
+
+.btn-submit {
+  background: var(--clr-primary);
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 0.75em 2.5em;
+  color: white;
+  text-decoration: none;
+  display: block;
+  border-radius: 0.35em;
+}
+
+.btn-submit:hover,
+.btn-primary:hover,
+.btn-submit:focus,
+.btn-submit:focus {
+  background: #151D3B;
+  color: white;
+  transform: translateY(-1%);
+}
+
+/* Homepage Styles */
+header {
+  padding: 1em 0 2em;
+}
+
+.hero {
+  background-color: var(--clr-accent);
+  background-image: url('../images/honeycomb.jpg');
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+}
+
+/* About Us */
+.about-us {
+  background: var(--clr-accent);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.about-us-intro {
+  background: var(--clr-primary);
+  background-image: url("../images/beebackground.jpg");
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 1.5em 1em;
+  color: white;
+}
+
+.about-us-body {
+  padding: 1.5em 1em 0;
+  color: var(--clr-text);
+}
+
+.about-us-body p {
+  text-align: left;
+}
+
+/* Order Online Section */
+.order-online {
+  background: var(--clr-accent-light);
+}
+
+/* Perks Section */
+.perks-text {
+  padding: 0 0 1em;
+  color: #1a9790;
+}
+
+.perks-icon {
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+  width: 100px;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: var(--clr-accent);
+}
+
+.carousel-inner {
+  padding: 0 6%;
+}
+
+.quotation-img {
+  width: 5%;
+}
+
+.testimonial-text {
+  font-size: var(--fs-md);
+  font-weight: bold;
+  color: var(--clr-text)
+}
+
+/* Product Section */
+.products {
+  display: flex;
+  flex-direction: column;
+}
+
+.product {
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: 0 0 1em;
+}
+
+.product:last-of-type {
+  margin-bottom: 2em;
+}
+
+.product-image {
+  display: inline-block;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.product-content {
+  padding: 1.5rem
+}
+
+.product-title {
+  color: var(--clr-primary);
+  font-size: var(--fs-md);
+  margin-bottom: 0.5em;
+}
+
+.fine-print {
+  margin-top: 1em;
+  font-size: var(--fs-md);
+  color: red;
+}
+
+/* Contact Section */
+.contact {
+  background: var(--clr-accent-light);
+}
+
+.textbox {
+  width: 60%;
+  overflow: hidden;
+  padding: 1em 0;
+  margin: 1em auto;
+  border-bottom: 1px solid var(--clr-primary);
+}
+
+.textbox input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: var(--fs-sm);
+  width: 80%;
+  float: left;
+}
+
+.message-box {
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid var(--clr-primary);
+  background: none;
+}
+
+/* Footer Section */
+footer {
+  background: var(--clr-primary);
+  padding: 1em 1em;
+  color: white;
+}
+
+footer a {
+  color: inherit;
+}
+
+.footer-nav,
+.footer-social {
+  list-style: none;
+  margin: 1em;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-link {
+  padding: 2vw;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.social-link:hover {
+  text-decoration: underline;
+  color: var(--clr-accent);
+}
+
+.social-icon {
+  width: 50px;
+  margin: 0.5em;
+}
+
+@media (max-width: 800px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li:last-child {
+    margin-right: 0;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  html {
+    font-size: var(--fs-xsm);
+  }
+
+  h1,
+  h2 {
+    font-size: var(--fs-lg);
+  }
+
+  .testimonial-text,
+  .product-title,
+  .fine-print {
+    font-size: var(--fs-sm);
+  }
+
+  .textbox input {
+    font-size: var(--fs-xsm);
+  }
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+  transition: transform 300ms ease-in;
+  transform: translateY(5%);
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}

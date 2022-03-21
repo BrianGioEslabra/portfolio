@@ -1,0 +1,212 @@
+:root {
+  --clr-primary: #8A39E1;
+  --clr-secondary: #B667F1;
+  --clr-tertiary: #fff;
+  --clr-text-prm: #000;
+  --clr-text-scn: #8f8f8f;
+  --ff-logo: 'Pacifico', cursive;
+  --ff-text: 'Inter', sans-serif;
+  --fs-title-bg: 3rem;
+  --fs-title-sm: 2.5rem;
+  --fs-text-bg: 1.6rem;
+  --fs-text-sm: 1.125rem;
+}
+
+body {
+  font-family: var(--ff-text);
+  text-align: center;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--clr-tertiary);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--clr-secondary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ff-text);
+  font-weight: bold;
+}
+
+p {
+  color: var(--clr-text-scn);
+}
+
+/* Headings */
+.big-heading,
+.section-heading {
+  font-size: var(--fs-title-bg);
+  line-height: 1.5;
+}
+
+.big-heading {
+  font-weight: bold;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Sections */
+.colored-section {
+  background-color: var(--clr-primary);
+  color: var(--clr-tertiary);
+}
+
+.white-section {
+  background-color: var(--clr-tertiary);
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: var(--ff-logo);
+  font-size: var(--fs-title-sm);
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: var(--fs-text-sm);
+  font-family: var(--ff-text);
+}
+
+/* Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+#title {
+  background-color: var(--clr-primary);
+  color: var(--clr-tertiary);
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.title-image {
+  max-width: 80%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Features Section */
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: var(--fs-text-bg);
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon-img {
+  width: 60%;
+  margin: 10px 10px 50px;
+}
+
+/* Testimonial Section */
+#testimonials {
+  background-color: var(--clr-secondary);
+}
+
+.testimonial-text {
+  font-size: var(--fs-title-bg);
+  line-height: 1.5;
+}
+
+#press {
+  background-color: var(--clr-secondary);
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 2vw 2vw 3vw;
+}
+
+/* Topics Section */
+#topics {
+  padding: 7% 10%;
+}
+
+.choose-img {
+  width: 60%;
+  margin: 2vw 2vw 3vw;
+}
+
+.topics-column {
+  padding: 3% 2%;
+}
+
+/* CTA Section */
+/* Attibution Section */
+.attribution {
+  text-decoration: none;
+  margin: 50px auto 0 auto;
+  opacity: 0.3;
+}
+
+/* Footer Section */
+.social-icon {
+  margin: 20px 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 1175px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+  }
+}
+
+@media (max-width: 950px) {
+  .container-fluid{
+    padding: 7%;
+  }
+
+  #title .container-fluid {
+    padding: 3% 7% 7%;
+  }
+
+  .big-heading,
+  .section-heading {
+    font-size: var(--fs-title-sm);
+  }
+
+  .navbar-brand,
+  .testimonial-text {
+    font-size: var(--fs-text-bg);
+  }
+
+  .feature-title {
+    font-size: var(--fs-text-sm);
+  }
+
+  .icon-img,
+  .choose-img {
+    width: 40%;
+  }
+}
