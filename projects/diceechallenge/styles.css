@@ -28,6 +28,10 @@ p {
   font-family: 'Indie Flower', cursive;
 }
 
+.instruction {
+  color: black;
+}
+
 img {
   width: 80%;
 }
