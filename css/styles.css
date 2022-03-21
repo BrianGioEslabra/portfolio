@@ -400,6 +400,7 @@ header nav a.active {
 
 .skills-title {
   text-align: center;
+  margin-top: 0;
 }
 
 .skills-alt-container {
