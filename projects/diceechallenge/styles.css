@@ -36,9 +36,10 @@ footer {
   color: #DBEDF3;
   font-family: sans-serif;
   padding-top: 50px;
+  text-align: center;
 }
 
-.MyInstructions {
+.my-instructions {
   font-family: verdana;
   font-size: 100rem;
   color: aqua;
