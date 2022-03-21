@@ -294,7 +294,7 @@ header nav a.active {
   display: block;
   height: auto;
   max-width: 300px;
-  margin: 0 auto;
+  margin: 5vw auto 0;
 }
 
 .caption {
