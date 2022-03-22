@@ -111,12 +111,16 @@ p {
   position: relative;
 }
 
+#features .container-fluid {
+  padding: 3% 7%;
+}
+
 .feature-title {
   font-size: var(--fs-text-bg);
 }
 
 .feature-box {
-  padding: 4.5%;
+  padding: 2% 4.5%;
 }
 
 .icon-img {
