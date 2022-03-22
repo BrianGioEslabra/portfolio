@@ -295,6 +295,7 @@ header nav a.active {
   height: auto;
   max-width: 300px;
   margin: 5vw auto 0;
+  box-shadow: 0.5rem 0.5rem var(--clr-primary), -0.1rem -0.1rem var(--clr-primary);
 }
 
 .caption {
