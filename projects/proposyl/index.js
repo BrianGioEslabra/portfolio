@@ -7,14 +7,6 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
 });
 
-// to close navbar when clicked outside
-
-document.addEventListener("click", () => {
-  if (navbarLinks.classList.contains('active')) {
-    navbarLinks.classList.remove('active')
-     }
-  }, true);
-
 
 // For Animation
 
