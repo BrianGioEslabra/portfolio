@@ -33,11 +33,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--clr-bg);
+  background: #f9f9f9;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--clr-primary);
+  background: grey;
+  border-radius: 10px;
 }
 
 a {

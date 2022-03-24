@@ -22,11 +22,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--clr-tertiary);
+  background: #f9f9f9;
 }
 
 body::-webkit-scrollbar-thumb {
   background: var(--clr-secondary);
+  border-radius: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
