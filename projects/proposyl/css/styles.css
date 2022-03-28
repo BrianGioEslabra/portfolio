@@ -143,6 +143,7 @@ p {
 .btn {
   font-family: var(--ff-sans);
   border: 0;
+  transition: transform 200ms ease-in-out;
 }
 
 .btn-primary {
@@ -160,13 +161,12 @@ p {
   border-radius: 0.35em;
 }
 
-.btn-submit:hover,
-.btn-primary:hover,
-.btn-submit:focus,
-.btn-submit:focus {
+.btn:hover,
+.btn:focus
+ {
   background: #151D3B;
   color: white;
-  transform: translateY(-1%);
+  transform: scale(1.1);
 }
 
 /* Homepage Styles */
